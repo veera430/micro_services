@@ -12,7 +12,7 @@ services:
       - .:/app
     ports:
       - 8000:8000
-    depend_on:
+    depends_on:
       - db
   db:
     container_name: db
