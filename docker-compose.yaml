@@ -3,7 +3,7 @@ version: "3.9"
 services:
   app:
     container_name: app
-    build: ./app
+    build: .
     command: > 
         bash -c "python manage.py makemigrations
         && python manage.py migrate
